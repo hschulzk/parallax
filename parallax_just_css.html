@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect Just CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .parallax-container {
+            height: 500px;
+            background-color: none;
+            overflow-y: scroll;
+        }
+
+        .parallax-background {
+            height: 450px;
+            overflow-y: hidden;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .content_wrapper {
+            height: 1200px;
+            width: 100%;
+            position: relative;
+            top: 0px;
+        }
+
+        .content_inner {
+            height: 250px;
+            position: relative;
+            top: 50px;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        /* This stuff is really filler. You can do whatever here. */
+
+        .image_1 {
+            background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg');
+        }
+
+        .image_2 {
+            background-image: url('https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg');
+        }
+
+        .image_3 {
+            background-image: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg');
+        }
+
+        .your_content_here {
+            display: flex;
+            align-items: center;
+        }
+
+        .your_content_here > h1 {
+            color: #fff;
+            font-size: 45px;
+            line-height: 55px;
+            font-family: sans-serif;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-background image_1">
+            <div class="content_wrapper">
+                <div class="content_inner">
+                    <div class="your_content_here">
+                        <h1>Hello, Scrwolld!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax-background image_2">
+            <div class="content_wrapper">
+                <div class="content_inner">
+                    <div class="your_content_here">
+                        <h1>And another!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax-background image_3">
+            <div class="content_wrapper">
+                <div class="content_inner">
+                    <div class="your_content_here">
+                        <h1>A third!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
